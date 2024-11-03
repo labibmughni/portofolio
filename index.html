@@ -41,7 +41,18 @@
         crossorigin="anonymous"></script>
 
     <script>
-      simplyCountdown('.countdown', {});
+      simplyCountdown('.simply-countdown', {
+        year: 2025, // required
+        month: 11, //required
+        day: 7, //required
+        hours: 8, //required
+        words:{ //words displayed into the countdown
+          days: { singular: 'hari', plural: 'hari' },
+          hours: { singular: 'jam', plural: 'jam' },
+          minutes: { singular: 'menit', plural: 'menit' },
+          seconds: { singular: 'detik', plural: 'detik' }
+        },
+    });
     </script>
   </body>
 
